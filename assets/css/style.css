@@ -177,5 +177,22 @@ html {
 }
 
 
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #c6e59a;
+  color: #1b1919;
+}
+
+/* Chỉnh thêm cho link, nút để nhìn rõ hơn */
+.dark-mode a {
+  color: #66ccff;
+}
+
+.dark-mode .controls button {
+  background-color: #f0071a;
+  color: #1b1919;
+  border: 1px solid #f0071a;
+}
+
 
 
