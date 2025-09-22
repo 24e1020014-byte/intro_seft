@@ -1,0 +1,181 @@
+/* Toàn bộ phần header */
+/* Chừa khoảng trống bằng chiều cao header */
+body {
+    margin: 0;
+    padding-top: 120px;   
+}
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Header */
+#header {
+    position: fixed;          
+    top: 0;                   
+    left: 0;
+    right: 0;
+    z-index: 1000;            
+    
+    padding: 20px 0;
+    margin: 0 230px;          
+    border-bottom: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+/* Đảm bảo table full width */
+#header table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Các ô trong bảng */
+#header td {
+    vertical-align: middle;
+    padding: 10px;   
+}
+
+/* Cột trái */
+#header .info {
+    text-align: left;
+    padding-left: 15px;       /* bỏ padding dư */
+}
+
+#header .name {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+}
+
+#header .title {
+    margin: 8px 0 0;    
+    font-size: 18px;
+    font-weight: 250;
+    color: #100808;
+    font-style: italic;
+}
+
+/* Cột phải */
+#header .avatar-cell {
+    text-align: right;
+    width: 140px; /* tạo khoảng cách cố định cho avatar */
+    padding-right: 230px; 
+}
+
+#header .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;   
+    object-fit: cover;    /* cắt ảnh vừa khung */
+    border: 2px solid #ddd;
+}
+
+
+
+/* Toàn bộ content */
+#content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Cột trái rộng gấp đôi cột phải */
+    gap: 30px;
+    padding: 20px 0px;
+    margin: 0 230px; 
+}
+
+/* Cột trái */
+#content .left-column {
+    padding: 15px;
+}
+
+#content .left-column h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#content .job {
+    margin-bottom: 20px;
+}
+
+#content .job h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+}
+
+#content .job p {
+    margin: 0 0 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Hobby style */
+.left-column .hobby {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 12px;
+}
+
+.left-column .hobby-img {
+    width: 140px;
+    height:140px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+}
+
+/* Cột phải */
+#content .right-column {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#content .right-column h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+#content .right-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+#content .right-column ul li {
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Áp dụng cho tất cả icon trong danh sách */
+#content .right-column ul li i {
+    margin-right: 8px;   /* khoảng cách giữa icon và chữ */
+    color: #2c3e50;      /* màu icon */
+    font-size: 14px;     /* icon vừa mắt */
+}
+
+#content .right-column .social:hover {
+    color: #0c04df;
+}
+
+#content .right-column .social {
+    color: #000;
+}
+
+
+
+
